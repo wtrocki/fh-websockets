@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Websocket Chat</title>
+<script  src="js/lib/jquery-1.8.2.min.js"></script>
+<script  src="js/lib/jquery-ui-1.12.1.custom.min.js"></script>
+<script  src="js/util/stringUtils.js"></script>
+<script  src="js/SocketClient.js"></script>
+<script  src="js/ui/ChatController.js"></script>
+<script  src="js/ui/panels.js"></script>
+<script  src="js/ui/events.js"></script>
+  <script src="js/lib/feedhenry.js"></script>
+    <script src="js/cloudApi.js"></script>
+<script>
+	$(document).ready(function() {
+		buildPanels();
+		bindKeyboardEvents();
+	});
+</script>
+<link type="text/css" href="css/custom-theme/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+</head>
+<body>
+
+<div id="loginPanel" title="Login">
+	<input id="userNameInput" type="text" maxlength="12" class="rounded" placeholder="UserName" autofocus="true"/>
+</div>
+
+<div id="chatPanel" title="Node.js WebSocket Chat">
+	<div align="center">
+		<table border="0">
+			<tr>
+				<td align="top">
+					<div id="messages" class="messagePanel wordwrap rounded"></div>
+					<input id="msgInput" class="msgInput rounded" type="text"/>
+				</td>
+				<td valign="top" id="users" class="userPanel rounded"></td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+</body>
+</html>

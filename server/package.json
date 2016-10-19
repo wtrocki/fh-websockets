@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-ws-chat",
+  "version": "1.0.0",
+  "description": "nodejs-ws-chat ==============",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "_"
+  },
+  "keywords": [
+    "chat",
+    "websockets"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bufferutil": "^1.2.1",
+    "ws": "^1.1.1"
+  }
+}
